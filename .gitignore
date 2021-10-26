@@ -1,0 +1,12 @@
+figures/PerturbResults/RandUnif|ALLRayPoolOutputs|n=1000m=1024r=1000000datareps=5sampreps=10.pkl
+figures/PerturbResults/*.pkl
+**/**/.pkl
+*.pkl
+**/*.pkl
+data/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+SDMImprovements/
+paper-drafts/
+Miscellaneous.ipynb
