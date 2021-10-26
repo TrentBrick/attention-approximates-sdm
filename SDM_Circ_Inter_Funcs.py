@@ -110,11 +110,11 @@ def log_J_n(th1, th2, r, n):
     
 def cap_intersection(n, cs_dvs, hamm_dist, r, rad=1, 
                          return_log=False, ham_input = False, print_oobs=False):
-     """ 
+    """ 
      Computes the continuous hypersphere cap intersection. 
      Does all compute in log space for numerical stability, option to return 
      log results or not. 
-     """
+    """
     if r is not None: 
         if type(r) != int: 
             r = np.round(r) # number of neurons
