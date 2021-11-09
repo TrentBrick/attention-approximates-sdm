@@ -20,13 +20,15 @@ The main contribution of this paper is to show that the Sparse Distributed Memor
 
 ### Jupyter Notebooks:
 
+Used to run all code.
+
 * Softmax_Circle_Approx.ipynb - Computes the approximate circle intersection and shows how it relates to the softmax via the log linear regression to fit Beta in the exponential. This is the core contribution of our paper. 
 
 * Exp_Approx_Circle_Intersect.ipynb - Implements and tests how well the exponential upper and lower bounds analytically derived for the circle intersection perform. 
 
-* Associative_Memory_Tests.ipynb - Calls on functions in Associative_Memory_Implementations.py and Associative_Memory_Data_Processing.py to test all of the Associative Memory algorithms considered: Neuron Based SDM; Pattern Based SDM with Infinite Neurons; Pattern Based SDM with Finite Neurons; Hopfield Network; Binary SDM with Attention with learnt Beta; SDM Attention with learnt Beta; Transformer Attention.
+* SDM_Experiments.ipynb - Calls on functions in Implementations_Associative_Memory.py and Data_Processing_Associative_Memory.py to test all of the Associative Memory algorithms considered: Neuron Based SDM; Pattern Based SDM with Infinite Neurons; Pattern Based SDM with Finite Neurons; Hopfield Network; Binary SDM with Attention with learnt Beta; SDM Attention with learnt Beta; Transformer Attention.
 
-* LearnProjections.ipynb - Also calls on functions in Associative_Memory_Implementations.py to learn a projection matrix for the MNIST and CIFAR datasets before testing how it affects the performance of continuous vectors that use three different weightings: Binary SDM Circle Intersection, Continuous SDM Hypersphere Cap Intersection, Attention Softmax with a Beta fitted to Binary SDM. 
+* LearnProjections.ipynb - Also calls on functions in Implementations_Associative_Memory.py to learn a projection matrix for the MNIST and CIFAR datasets before testing how it affects the performance of continuous vectors that use three different weightings: Binary SDM Circle Intersection, Continuous SDM Hypersphere Cap Intersection, Attention Softmax with a Beta fitted to Binary SDM. 
 
 * Neuron_Address_Distribution.ipynb - Computes the probability that at least one neuron is within a given Hamming distance of a random query.
 
@@ -44,13 +46,15 @@ The main contribution of this paper is to show that the Sparse Distributed Memor
 
 #### Python Scripts:
 
+Supporting functions for the Jupyter Notebooks.
+
 * SDM_Circ_Inter_Funcs.py - Contains lots of heavily used functions including implementing the circle intersection function and fitting the log linear regression to the circle intersection.
 
-* Associative_Memory_Implementations.py - Handles the algorithmic implementations of all Associative Memory models considered.
+* Implementations_Associative_Memory.py - Handles the algorithmic implementations of all Associative Memory models considered.
 
-* Associative_Memory_Data_Processing.py - Loads in and processes the datasets MNIST and Random uniformly distributed patterns. This includes randomly choosing a number of patterns as targets and applying random perturbations to them to evaluate the autoassociative convergence properties of the algorithms. 
+* utils_LearningProjections.py - Called by LearnProjections.ipynb, leverages functions from Implementations_Associative_Memory.py but wraps them in Pytorch backpropagation to learn the projection matrix. 
 
-* Convergence_Functions.py - Code to compute the critical distance of SDM given different parameters.
+* Data_Processing_Associative_Memory.py - Applies random perturbations to continuous and binary data inputs to then evaluate the autoassociative convergence properties of various algorithms. 
 
 #### Folders:
 
