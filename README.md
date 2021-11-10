@@ -2,9 +2,8 @@
 
 This is all of the code used to run analyses in the paper "Attention Approximates Sparse Distributed Memory" by Trenton Bricken and Cengiz Pehlevan. 
 
-Paper: https://openreview.net/forum?id=WVYzd7GvaOM&noteId=l-hU8Fav3x#all
-
-Blog post: https://www.trentonbricken.com/Attention-Approximates-Sparse-Distributed-Memory/
+* Paper: https://openreview.net/forum?id=WVYzd7GvaOM&noteId=l-hU8Fav3x#all
+* Blog post: https://www.trentonbricken.com/Attention-Approximates-Sparse-Distributed-Memory/
 
 ## Abstract
 
