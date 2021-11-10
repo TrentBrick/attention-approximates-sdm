@@ -2,8 +2,12 @@
 
 This is all of the code used to run analyses in the paper "Attention Approximates Sparse Distributed Memory" by Trenton Bricken and Cengiz Pehlevan. 
 
-Paper: URL
-Blog post: TODO
+Paper: https://openreview.net/forum?id=WVYzd7GvaOM&noteId=l-hU8Fav3x#all
+Blog post: https://www.trentonbricken.com/Attention-Approximates-Sparse-Distributed-Memory/
+
+## Abstract
+
+While Attention has come to be an important mechanism in deep learning, there remains limited intuition for why it works so well. Here, we show that Transformer Attention can be closely related under certain data conditions to Kanerva's Sparse Distributed Memory (SDM), a biologically plausible associative memory model. We confirm that these conditions are satisfied in pre-trained GPT2 Transformer models. We discuss the implications of the Attention-SDM map and provide new computational and biological interpretations of Attention.
 
 ## Summary of Paper
 
