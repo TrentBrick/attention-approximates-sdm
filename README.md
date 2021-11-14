@@ -1,4 +1,4 @@
-# SDM Is All You Need - Codebase
+# Attention Approximates Sparse Distributed Memory - Codebase
 
 This is all of the code used to run analyses in the paper "Attention Approximates Sparse Distributed Memory" by Trenton Bricken and Cengiz Pehlevan. 
 
